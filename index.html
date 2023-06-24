@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anotador de emails</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Anotador de emails</h1>
+        <div id="input-container">
+            <input type="text" id="name-input" placeholder="Escribe tu nombre">
+            <input type="text" id="email-input" placeholder="Escribe tu email">
+            <button id="add-btn">Agregar</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <div id="update-container">
+        <input type="text" id="update-name-input">
+        <input type="text" id="update-email-input">
+        <button id="update-btn">Actualizar</button>
+        <button id="cancel-btn">Cancelar</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
