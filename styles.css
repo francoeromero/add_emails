@@ -5,7 +5,7 @@
 :root{
     --color-primary: #306c91;
     --color-secundario: #6d99b4;
-    --back: rgba(222, 222, 222, 0.867);
+    --back: rgba(35, 35, 35, 0.867);
 }
 #container {
     max-width: 800px;
@@ -15,6 +15,7 @@
 
 h1{
     margin-top: 0;
+    color: white;
 }
 
 #input-container{
@@ -50,20 +51,29 @@ button {
     cursor: pointer;
     background-color: var(--color-primary);
     color: white;
-    border: 1px solid var(--color-primary);
+    border: 3px solid var(--color-primary);
     border-radius: 4px;
 }
 
 button:hover{
     background-color: var(--back);
-    color: black;
+    color: rgb(240, 240, 240);
     transition: 0.7s;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px;
+    color: white;
+    box-shadow: 5px 5px 15px black;
 }
 
 th,

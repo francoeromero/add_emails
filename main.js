@@ -28,8 +28,8 @@ function renderTable() {
         idTd.innerText = user.id;
         nameTd.innerText = user.name;
         emailTd.innerText = user.email;
-        editBtn.innerText = 'Edit';
-        deleteBtn.innerText = 'Delete';
+        editBtn.innerText = 'Editar';
+        deleteBtn.innerText = 'Eliminar';
         editBtn.addEventListener('click', () =>{
             showUpdateForm(user.id);
         });
