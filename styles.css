@@ -9,8 +9,53 @@
     --color-secundario: #6d99b4;
     --back: rgb(97, 97, 97);
 }
+    /* rotulo */
+    .content-circle{
+        display: flex;
+        width: 100%;
+      }
+      .circle{
+        width: 1rem;
+        margin-right: 8px;
+        height: 1rem;
+        border-radius: 50%;
+      }
+      .rojo{
+        background: #f05b5b;
+      }
+      .amarillo{
+        background: #f9d959;
+      }
+      .verde{
+        background: #4CAF50;
+      }
+      .content-name{
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        background: none;
+      }
+      .name{
+        font-size: 1rem;
+        margin-right: 1rem;
+        background: none;
+        color: white;
+      }
+      .rotulo{
+        display: flex;
+        width: 95%;
+        margin: 1rem;
+        background: none;
+
+      }
 h1{
     border-radius: 20px;
+    margin-bottom: 20px;
+}
+input{
+    margin-bottom: 20px;
+
 }
 #container {
     max-width: 800px;
