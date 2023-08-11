@@ -14,13 +14,15 @@ const validRegex = /^[a-zA-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 //funciones
 function renderTable() {
     tableBody.innerHTML = '';
-    for(let i = 0; i < users.length; i++){
+    for (let i = 0; i < users.length; i++) {
         const user = users[i];
         const tr = document.createElement('tr');
         const idTd = document.createElement('td');
         const nameTd = document.createElement('td');
         const emailTd = document.createElement('td');
         const actionsTd = document.createElement('td');
+        const buttonContainer = document.createElement('div'); // Nuevo contenedor div
+        buttonContainer.className = 'button-container'; // Asignar una clase al contenedor
         const editBtn = document.createElement('button');
         editBtn.className = 'edit-btn';
         const deleteBtn = document.createElement('button');
@@ -30,14 +32,15 @@ function renderTable() {
         emailTd.innerText = user.email;
         editBtn.innerText = 'Editar';
         deleteBtn.innerText = 'Eliminar';
-        editBtn.addEventListener('click', () =>{
+        editBtn.addEventListener('click', () => {
             showUpdateForm(user.id);
         });
-        deleteBtn.addEventListener('click', () =>{
+        deleteBtn.addEventListener('click', () => {
             deleteUser(user.id);
         });
-        actionsTd.appendChild(editBtn);
-        actionsTd.appendChild(deleteBtn);
+        buttonContainer.appendChild(editBtn);
+        buttonContainer.appendChild(deleteBtn);
+        actionsTd.appendChild(buttonContainer); // Agregar el contenedor de botones al TD
         tr.appendChild(idTd);
         tr.appendChild(nameTd);
         tr.appendChild(emailTd);

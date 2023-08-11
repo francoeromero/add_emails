@@ -1,16 +1,37 @@
 *{
     background: var(--back);
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 :root{
     --color-primary: #306c91;
     --color-secundario: #6d99b4;
-    --back: rgba(35, 35, 35, 0.867);
+    --back: rgb(97, 97, 97);
+}
+h1{
+    border-radius: 20px;
 }
 #container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #b5b5b5;
+
+}
+.main{
+    width: 40%;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    background: var(--back);
+    box-shadow: 20px 20px 50px black;
 }
 
 h1{
@@ -20,6 +41,7 @@ h1{
 
 #input-container{
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 
@@ -31,6 +53,7 @@ h1{
     font-size: 16px;
     margin-right: 10px;
     border: 1px solid #ccc;
+    border-radius: 20px;
 }
 
 #name-input:focus,
@@ -51,8 +74,9 @@ button {
     cursor: pointer;
     background-color: var(--color-primary);
     color: white;
-    border: 3px solid var(--color-primary);
+    /* border: 3px solid var(--color-primary); */
     border-radius: 4px;
+    border: none;
 }
 
 button:hover{
@@ -66,22 +90,29 @@ button:hover{
     width: 100%;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
 }
 
 table{
     border-collapse: collapse;
-    width: 50%;
+    width: 80%;
     margin-bottom: 20px;
     color: white;
-    box-shadow: 5px 5px 15px black;
 }
+
 
 th,
 td{
     padding: 10px;
     text-align: left;
     /* margin-bottom: 1px solid #ddd; */
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    
 }
 
 th {
@@ -92,14 +123,18 @@ th {
 #update-container {
     display: none;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 #update-btn{
     background-color: #4b93a7;
+    border-radius: 20px;
+
 }
 
 #cancel-btn {
-    background-color: var(--color-primary)
+    background-color: var(--color-primary);
+    
 }
 
 .edit-btn {
@@ -107,7 +142,14 @@ th {
 }
 
 .delete-btn{
-    border: 1px solid #dc3545;
+    /* border: 1px solid #dc3545; */
     background-color: #dc3545;
     margin-left: 10px;
+}
+.delete-btn:hover{
+    background: #c12131;
+}
+.edit-btn:hover{
+    background-color:#1a5071;
+
 }

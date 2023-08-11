@@ -7,34 +7,36 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Anotador de emails</h1>
-        <div id="input-container">
-            <input type="text" id="name-input" placeholder="Escribe tu nombre">
-            <input type="text" id="email-input" placeholder="Escribe tu email">
-            <button id="add-btn">Agregar</button>
+    <main class="main">
+        <div id="container">
+            <h1>Anotador de emails</h1>
+            <div id="input-container">
+                <input type="text" id="name-input" placeholder="Escribe tu nombre">
+                <input type="text" id="email-input" placeholder="Escribe tu email">
+                <button id="add-btn">Agregar</button>
+            </div>
         </div>
-    </div>
-    <section class="flex">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-        </table>
-    </section>
-
-    <div id="update-container">
-        <input type="text" id="update-name-input">
-        <input type="text" id="update-email-input">
-        <button id="update-btn">Actualizar</button>
-        <button id="cancel-btn">Cancelar</button>
-    </div>
+        <section class="flex">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    
+        <div id="update-container">
+            <input type="text" id="update-name-input">
+            <input type="text" id="update-email-input">
+            <button id="update-btn">Actualizar</button>
+            <button id="cancel-btn">Cancelar</button> 
+        </div>
+    </main>
     <script src="./main.js"></script>
 </body>
 </html>
